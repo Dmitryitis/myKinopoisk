@@ -228,16 +228,62 @@
             </div>
             <div class="new__movies-body">
                 <div class="new__movies-filter">
-                    <a href="#" class="movies__filter-item">Recent</a>
+                    <a href="#" class="movies__filter-item filter-active">Recent</a>
                     <a href="#" class="movies__filter-item">Most popular</a>
                     <a href="#" class="movies__filter-item">Best</a>
                     <a href="#" class="movies__filter-item">Coming soon</a>
                 </div>
+    
+                <div class="new__movies-movies">
+                    <div class="new__movies-item">
+                        <a href="#" class="new__movies-img--block">
+                            <img src="assets/images/topFilms/post-19-copyright-485x598.jpg" alt="" class="new__movies-img">
+                        </a>
+                        <a href="#" class="new__movies-name">Mongol</a>
+                        <div class="new__movies-genre">History</div>
+                    </div>
+    
+                    <div class="new__movies-item">
+                        <a href="#" class="new__movies-img--block">
+                            <img src="assets/images/topFilms/post-19-copyright-485x598.jpg" alt="" class="new__movies-img">
+                        </a>
+                        <a href="#" class="new__movies-name">Mongol</a>
+                        <div class="new__movies-genre">History</div>
+                    </div>
+    
+                    <div class="new__movies-item">
+                        <a href="#" class="new__movies-img--block">
+                            <img src="assets/images/topFilms/post-19-copyright-485x598.jpg" alt="" class="new__movies-img">
+                        </a>
+                        <a href="#" class="new__movies-name">Теория большого взрыва</a>
+                        <div class="new__movies-genre">History</div>
+                    </div>
+    
+                    <div class="new__movies-item">
+                        <a href="#" class="new__movies-img--block">
+                            <img src="assets/images/topFilms/post-25-copyright-485x665.jpg" alt="" class="new__movies-img">
+                        </a>
+                        <a href="#" class="new__movies-name">Теория большого взрыва</a>
+                        <div class="new__movies-genre">History</div>
+                    </div>
+                </div>
+            </div>
+            <div class="view__more-block">
+                <a href="#" class="view__more-btn">View more films</a>
             </div>
         </div>
     </section>
 
-    
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__logo">
+                <img src="assets/images/header/logo-1x.png" alt="" class="footer__logo-img">
+            </div>
+            <div class="footer__copyright">
+                © 2021. All rights reserved.
+            </div>
+        </div>
+    </footer>
 </div>
 
 <script>
@@ -246,6 +292,8 @@
     const closeBtn = document.querySelector(".close__block");
     const links = document.querySelector("#links");
     const allLinks = document.querySelectorAll(".nav__link-item");
+
+    const allFilterMovies = document.querySelectorAll(".movies__filter-item");
     const openMenu = () => {
         if (links.className.includes("open")) {
             links.classList.remove('open');
@@ -272,11 +320,23 @@
         }
     };
 
+
     menu.addEventListener("click", openMenu);
     closeBtn.addEventListener("click", closeMenu);
     allLinks.forEach((item) => {
         item.addEventListener("click", closeMenu);
     });
+    allFilterMovies.forEach((item) => {
+        item.addEventListener("click", function (e) {
+            e.preventDefault();
+            if (!e.target.getAttribute('class').includes('filter-active')) {
+                allFilterMovies.forEach((i) => {
+                    i.classList.remove('filter-active');
+                });
+                this.classList.add('filter-active');
+            }
+        });
+    })
 </script>
 <script src="assets/js/app.js"></script>
 </body>
