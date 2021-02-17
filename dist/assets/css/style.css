@@ -22,6 +22,7 @@ html, body {
     position: relative;
     min-height: 100vh;
     display: grid;
+    background-color: #14171c;
     grid-template-areas: "header" "content" "footer";
 }
 
@@ -42,7 +43,7 @@ html, body {
 
 .header-height {
     width: 100%;
-    height: 3rem;
+    height: 2rem;
     background-color: #14171c;
 }
 
@@ -185,8 +186,7 @@ html, body {
     z-index: 1002;
     border: 2px solid white;
     border-radius: 50%;
-    display: -ms-flexbox;
-    display: flex;
+    display: none;
     -ms-flex-pack: center;
     justify-content: center;
     -ms-flex-align: center;
@@ -433,7 +433,7 @@ html, body {
 
 .popular {
     background: #14171c;
-    padding: 60px 0;
+    padding: 100px 0 60px 0;
     width: 100%;
 }
 
@@ -939,11 +939,11 @@ html, body {
 }
 
 .footer {
+    width: 100%;
+    padding: 30px 0;
     position: absolute;
     bottom: -80px;
     left: 0;
-    width: 100%;
-    padding: 30px 0;
     background: #1a1d24;
     color: white;
 }

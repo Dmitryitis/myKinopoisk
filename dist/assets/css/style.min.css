@@ -30,7 +30,6 @@ html, body {
   padding: 10px 0;
   background-color: #14171c;
   position: fixed;
-  overflow: hidden;
   top: 0;
   left: 0;
   z-index: 10001; }
@@ -177,7 +176,8 @@ html, body {
   outline: 0;
   background: 0;
   border: 0;
-  cursor: pointer; }
+  cursor: pointer;
+  border-radius: 50%; }
   .burger:focus {
     outline: 0; }
 
@@ -206,6 +206,7 @@ html, body {
 
 .header__profile {
   display: flex;
+  flex-direction: column;
   align-items: center;
   width: 35px;
   height: 35px;
@@ -216,13 +217,71 @@ html, body {
   outline: 0;
   text-decoration: none;
   transition: color 0.3s linear;
-  cursor: pointer;
-  margin-right: 6%; }
+  cursor: pointer; }
   .header__profile:focus {
     outline: 0; }
   .header__profile:hover {
     color: #dc6fa6;
     fill: #dc6fa6; }
+
+.header__profile-block {
+  position: relative; }
+  .header__profile-block:hover .header__profile-content {
+    visibility: visible;
+    opacity: 1; }
+
+.header__profile-content {
+  position: absolute;
+  top: 140%;
+  right: -100%;
+  background: #2a2a2a;
+  color: white;
+  opacity: 0;
+  z-index: 1000;
+  width: 230px;
+  visibility: hidden;
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(34, 51, 64, 0.23);
+  -moz-box-shadow: 0px 0px 8px 0px rgba(34, 51, 64, 0.23);
+  box-shadow: 0px 0px 8px 0px rgba(34, 51, 64, 0.23);
+  transition: visibility 0.5s linear, opacity 0.3s linear; }
+
+.vis {
+  visibility: visible;
+  opacity: 1; }
+
+.header__profile-content--inner {
+  position: relative; }
+  .header__profile-content--inner:before {
+    position: absolute;
+    bottom: 106.5%;
+    right: 18%;
+    content: "";
+    display: block;
+    border: 10px solid transparent;
+    border-bottom: 10px solid #2a2a2a; }
+
+.header__profile-username {
+  padding: 5px 16px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #c53fe6;
+  margin: 15px 0; }
+  .header__profile-username span {
+    color: #cb2dd6;
+    font-size: 22px;
+    font-weight: bold; }
+
+.header__profile-item {
+  margin-bottom: 5px;
+  display: block;
+  text-decoration: none;
+  padding: 5px 16px;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.9);
+  transition: color 0.3s linear; }
+  .header__profile-item:hover {
+    text-decoration: none;
+    color: white; }
 
 .header__line {
   width: 2px;
