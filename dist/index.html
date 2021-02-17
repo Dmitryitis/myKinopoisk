@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    
+    <title>BrainsCloud | Home</title>
+</head>
+<body>
+<svg display="none">
+    <symbol id="menu" viewBox="0 -53 384 384">
+        <g>
+            <path d="m368 154.667969h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/>
+            <path d="m368 32h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/>
+            <path d="m368 277.332031h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/>
+        </g>
+    </symbol>
+
+    <symbol id="close" viewBox="0 0 512.001 512.001">
+        <g>
+            <path d="M284.286,256.002L506.143,34.144c7.811-7.811,7.811-20.475,0-28.285c-7.811-7.81-20.475-7.811-28.285,0L256,227.717
+			L34.143,5.859c-7.811-7.811-20.475-7.811-28.285,0c-7.81,7.811-7.811,20.475,0,28.285l221.857,221.857L5.858,477.859
+			c-7.811,7.811-7.811,20.475,0,28.285c3.905,3.905,9.024,5.857,14.143,5.857c5.119,0,10.237-1.952,14.143-5.857L256,284.287
+			l221.857,221.857c3.905,3.905,9.024,5.857,14.143,5.857s10.237-1.952,14.143-5.857c7.811-7.811,7.811-20.475,0-28.285
+			L284.286,256.002z"/>
+        </g>
+    </symbol>
+    <symbol id="profile" viewBox="0 0 512 512">
+        <g>
+            <path d="m256 512c-60.615 0-119.406-21.564-165.543-60.721-10.833-9.188-20.995-19.375-30.201-30.275-38.859-46.06-60.256-104.657-60.256-165.004 0-68.381 26.628-132.668 74.98-181.02s112.639-74.98 181.02-74.98 132.668 26.628 181.02 74.98 74.98 112.639 74.98 181.02c0 60.348-21.397 118.945-60.251 164.998-9.211 10.906-19.373 21.093-30.209 30.284-46.134 39.154-104.925 60.718-165.54 60.718zm0-480c-123.514 0-224 100.486-224 224 0 52.805 18.719 104.074 52.709 144.363 8.06 9.543 16.961 18.466 26.451 26.516 40.364 34.256 91.801 53.121 144.84 53.121s104.476-18.865 144.837-53.119c9.493-8.052 18.394-16.976 26.459-26.525 33.985-40.281 52.704-91.55 52.704-144.356 0-123.514-100.486-224-224-224z"/>
+            <path d="m256 256c-52.935 0-96-43.065-96-96s43.065-96 96-96 96 43.065 96 96-43.065 96-96 96zm0-160c-35.29 0-64 28.71-64 64s28.71 64 64 64 64-28.71 64-64-28.71-64-64-64z"/>
+            <path d="m411.202 455.084c-1.29 0-2.6-.157-3.908-.485-8.57-2.151-13.774-10.843-11.623-19.414 2.872-11.443 4.329-23.281 4.329-35.185 0-78.285-63.646-142.866-141.893-143.99l-2.107-.01-2.107.01c-78.247 1.124-141.893 65.705-141.893 143.99 0 11.904 1.457 23.742 4.329 35.185 2.151 8.571-3.053 17.263-11.623 19.414s-17.263-3.052-19.414-11.623c-3.512-13.989-5.292-28.448-5.292-42.976 0-46.578 18.017-90.483 50.732-123.63 32.683-33.114 76.285-51.708 122.774-52.358.075-.001.149-.001.224-.001l2.27-.011 2.27.01c.075 0 .149 0 .224.001 46.489.649 90.091 19.244 122.774 52.358 32.715 33.148 50.732 77.053 50.732 123.631 0 14.528-1.78 28.987-5.292 42.976-1.823 7.262-8.343 12.107-15.506 12.108z"/>
+        </g>
+    </symbol>
+
+    <symbol id="telegram" viewBox="0 -39 512.00011 512">
+        <g>
+            <path d="m504.09375 11.859375c-6.253906-7.648437-15.621094-11.859375-26.378906-11.859375-5.847656 0-12.042969 1.230469-18.410156 3.664062l-433.398438 165.441407c-23 8.777343-26.097656 21.949219-25.8984375 29.019531s4.0390625 20.046875 27.4999995 27.511719c.140626.042969.28125.085937.421876.125l89.898437 25.726562 48.617187 139.023438c6.628907 18.953125 21.507813 30.726562 38.835938 30.726562 10.925781 0 21.671875-4.578125 31.078125-13.234375l55.605469-51.199218 80.652344 64.941406c.007812.007812.019531.011718.027343.019531l.765625.617187c.070313.054688.144532.113282.214844.167969 8.964844 6.953125 18.75 10.625 28.308594 10.628907h.003906c18.675781 0 33.546875-13.824219 37.878906-35.214844l71.011719-350.640625c2.851563-14.074219.460937-26.667969-6.734375-35.464844zm-356.191406 234.742187 173.441406-88.605468-107.996094 114.753906c-1.769531 1.878906-3.023437 4.179688-3.640625 6.683594l-20.824219 84.351562zm68.132812 139.332032c-.71875.660156-1.441406 1.25-2.164062 1.792968l19.320312-78.25 35.144532 28.300782zm265.390625-344.566406-71.011719 350.644531c-.683593 3.355469-2.867187 11.164062-8.480468 11.164062-2.773438 0-6.257813-1.511719-9.824219-4.257812l-91.390625-73.585938c-.011719-.011719-.027344-.023437-.042969-.03125l-54.378906-43.789062 156.175781-165.949219c5-5.3125 5.453125-13.449219 1.074219-19.285156-4.382813-5.835938-12.324219-7.671875-18.820313-4.351563l-256.867187 131.226563-91.121094-26.070313 433.265625-165.390625c3.660156-1.398437 6.214844-1.691406 7.710938-1.691406.917968 0 2.550781.109375 3.15625.855469.796875.972656 1.8125 4.289062.554687 10.511719zm0 0"/>
+        </g>
+    </symbol>
+
+    <symbol id="instagram" viewBox="0 0 512.00096 512.00096">
+        <g>
+            <path d="m373.40625 0h-234.8125c-76.421875 0-138.59375 62.171875-138.59375 138.59375v234.816406c0 76.417969 62.171875 138.589844 138.59375 138.589844h234.816406c76.417969 0 138.589844-62.171875 138.589844-138.589844v-234.816406c0-76.421875-62.171875-138.59375-138.59375-138.59375zm108.578125 373.410156c0 59.867188-48.707031 108.574219-108.578125 108.574219h-234.8125c-59.871094 0-108.578125-48.707031-108.578125-108.574219v-234.816406c0-59.871094 48.707031-108.578125 108.578125-108.578125h234.816406c59.867188 0 108.574219 48.707031 108.574219 108.578125zm0 0"/>
+            <path d="m256 116.003906c-77.195312 0-139.996094 62.800782-139.996094 139.996094s62.800782 139.996094 139.996094 139.996094 139.996094-62.800782 139.996094-139.996094-62.800782-139.996094-139.996094-139.996094zm0 249.976563c-60.640625 0-109.980469-49.335938-109.980469-109.980469 0-60.640625 49.339844-109.980469 109.980469-109.980469 60.644531 0 109.980469 49.339844 109.980469 109.980469 0 60.644531-49.335938 109.980469-109.980469 109.980469zm0 0"/>
+            <path d="m399.34375 66.285156c-22.8125 0-41.367188 18.558594-41.367188 41.367188 0 22.8125 18.554688 41.371094 41.367188 41.371094s41.371094-18.558594 41.371094-41.371094-18.558594-41.367188-41.371094-41.367188zm0 52.71875c-6.257812 0-11.351562-5.09375-11.351562-11.351562 0-6.261719 5.09375-11.351563 11.351562-11.351563 6.261719 0 11.355469 5.089844 11.355469 11.351563 0 6.257812-5.09375 11.351562-11.355469 11.351562zm0 0"/>
+        </g>
+    </symbol>
+
+    <symbol id="youtube" viewBox="0 -62 512.00199 512">
+        <g>
+            <path d="m334.808594 170.992188-113.113282-61.890626c-6.503906-3.558593-14.191406-3.425781-20.566406.351563-6.378906 3.78125-10.183594 10.460937-10.183594 17.875v122.71875c0 7.378906 3.78125 14.046875 10.117188 17.832031 3.308594 1.976563 6.976562 2.96875 10.652344 2.96875 3.367187 0 6.742187-.832031 9.847656-2.503906l113.117188-60.824219c6.714843-3.613281 10.90625-10.59375 10.9375-18.222656.027343-7.628906-4.113282-14.640625-10.808594-18.304687zm-113.859375 63.617187v-91.71875l84.539062 46.257813zm0 0"/>
+            <path d="m508.234375 91.527344-.023437-.234375c-.433594-4.121094-4.75-40.777344-22.570313-59.421875-20.597656-21.929688-43.949219-24.59375-55.179687-25.871094-.929688-.105469-1.78125-.203125-2.542969-.304688l-.894531-.09375c-67.6875-4.921874-169.910157-5.5937495-170.933594-5.59765575l-.089844-.00390625-.089844.00390625c-1.023437.00390625-103.246094.67578175-171.542968 5.59765575l-.902344.09375c-.726563.097657-1.527344.1875-2.398438.289063-11.101562 1.28125-34.203125 3.949219-54.859375 26.671875-16.972656 18.445312-21.878906 54.316406-22.382812 58.347656l-.058594.523438c-.152344 1.714844-3.765625 42.539062-3.765625 83.523437v38.3125c0 40.984375 3.613281 81.808594 3.765625 83.527344l.027344.257813c.433593 4.054687 4.746093 40.039062 22.484375 58.691406 19.367187 21.195312 43.855468 24 57.027344 25.507812 2.082031.238282 3.875.441406 5.097656.65625l1.183594.164063c39.082031 3.71875 161.617187 5.550781 166.8125 5.625l.15625.003906.15625-.003906c1.023437-.003907 103.242187-.675781 170.929687-5.597657l.894531-.09375c.855469-.113281 1.816406-.214843 2.871094-.324218 11.039062-1.171875 34.015625-3.605469 54.386719-26.019532 16.972656-18.449218 21.882812-54.320312 22.382812-58.347656l.058594-.523437c.152344-1.71875 3.769531-42.539063 3.769531-83.523438v-38.3125c-.003906-40.984375-3.617187-81.804687-3.769531-83.523437zm-26.238281 121.835937c0 37.933594-3.3125 77-3.625 80.585938-1.273438 9.878906-6.449219 32.574219-14.71875 41.5625-12.75 14.027343-25.847656 15.417969-35.410156 16.429687-1.15625.121094-2.226563.238282-3.195313.359375-65.46875 4.734375-163.832031 5.460938-168.363281 5.488281-5.082032-.074218-125.824219-1.921874-163.714844-5.441406-1.941406-.316406-4.039062-.558594-6.25-.808594-11.214844-1.285156-26.566406-3.042968-38.371094-16.027343l-.277344-.296875c-8.125-8.464844-13.152343-29.6875-14.429687-41.148438-.238281-2.710937-3.636719-42.238281-3.636719-80.703125v-38.3125c0-37.890625 3.304688-76.914062 3.625-80.574219 1.519532-11.636718 6.792969-32.957031 14.71875-41.574218 13.140625-14.453125 26.996094-16.054688 36.160156-17.113282.875-.101562 1.691407-.195312 2.445313-.292968 66.421875-4.757813 165.492187-5.464844 169.046875-5.492188 3.554688.023438 102.589844.734375 168.421875 5.492188.808594.101562 1.691406.203125 2.640625.3125 9.425781 1.074218 23.671875 2.699218 36.746094 16.644531l.121094.128906c8.125 8.464844 13.152343 30.058594 14.429687 41.75.226563 2.558594 3.636719 42.171875 3.636719 80.71875zm0 0"/>
+        </g>
+    </symbol>
+
+    <symbol id="arrow-right" viewBox="0 0 31.49 31.49">
+        <g>
+            <path d="M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111
+	C0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587
+	c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z"/>
+            <g>
+            </g>
+    </symbol>
+</svg>
+<div class="page" id="page">
+
+    <div class="header-height"></div>
+    <header class="header">
+        <div class="header__inner">
+            <div class="menu__part">
+                <div class="logo">
+                    <img src="assets/images/header/logo-1x.png" alt="" class="logo__img">
+                </div>
+                <button type="button" class="burger">
+                    <svg class="menu-symbol">
+                        <use xlink:href="#menu"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="header__social-part">
+    <!--            <button type="button" class="header__profile">-->
+    <!--                <svg class="profile-symbol">-->
+    <!--                    <use xlink:href="#profile"></use>-->
+    <!--                </svg>-->
+    <!--            </button>-->
+                <button class="header__profile">
+                    Войти
+                </button>
+                <div class="header__line"></div>
+                <div class="header__social">
+                    <a href="#" class="header__social-telegram">
+                        <svg class="telegram-symbol">
+                            <use xlink:href="#telegram"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="header__social-instagram">
+                        <svg class="instagram-symbol">
+                            <use xlink:href="#instagram"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="header__social-youtube">
+                        <svg class="youtube-symbol">
+                            <use xlink:href="#youtube"></use>
+                        </svg>
+                    </a>
+                    <div class="header__line-right"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="links" id="links">
+        <button type="button" class="close__block">
+            <svg class="close-symbol">
+                <use xlink:href="#close"></use>
+            </svg>
+        </button>
+        <ul class="nav">
+            <li class="nav__link"><a href="#" class="nav__link-item">Home</a></li>
+            <li class="nav__link"><a href="#" class="nav__link-item">All films</a></li>
+            <li class="nav__link"><a href="#" class="nav__link-item">About</a></li>
+            <li class="nav__link"><a href="#" class="nav__link-item">Contact</a></li>
+        </ul>
+    </div>
+    
+
+    
+    <section class="popular">
+        <div class="popular__inner">
+            <div class="popular__img">
+                <div class="img-popular" style="background: url('/assets/images/mainpage/top-promo.jpg') no-repeat center;
+                                         background-size: cover;"></div>
+            </div>
+            <h2 class="popular__title">TYLER PERRY'S MADEA HALLOWEEN</h2>
+            <p class="populat__description-short">Perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                doloremque laudantium</p>
+            <a href="#" class="popular__link">Read more
+                <svg class="arrow__right-symbol">
+                    <use xlink:href="#arrow-right"></use>
+                </svg>
+            </a>
+        </div>
+    </section>
+    
+    <section class="top__films">
+        <a href="#" class="top__films-item">
+            <img src="assets/images/topFilms/post-23-copyright-485x665.jpg" alt="" class="top__films-img">
+            <article class="top__films-info">
+                <h3 class="top__films-title">PIRATES BAY</h3>
+                <h4 class="top__films-genre">Приключение</h4>
+                <div class="top__films-link">
+                    <div class="block__arrow">
+                        <svg class="top__arrow-right--symbol">
+                            <use xlink:href="#arrow-right"></use>
+                        </svg>
+                    </div>
+                    More information
+                </div>
+            </article>
+        </a>
+    
+        <a href="#" class="top__films-item">
+            <img src="assets/images/topFilms/teoru.webp" alt="" class="top__films-img">
+            <article class="top__films-info">
+                <h3 class="top__films-title">Теория большого взрыва</h3>
+                <h4 class="top__films-genre">Приключение</h4>
+                <div class="top__films-link">
+                    <div class="block__arrow">
+                        <svg class="top__arrow-right--symbol">
+                            <use xlink:href="#arrow-right"></use>
+                        </svg>
+                    </div>
+                    More information
+                </div>
+            </article>
+        </a>
+    
+        <a href="#" class="top__films-item">
+            <img src="assets/images/topFilms/post-7-copyright.jpg" alt="" class="top__films-img">
+            <article class="top__films-info">
+                <h3 class="top__films-title">PIRATES BAY</h3>
+                <h4 class="top__films-genre">Приключение</h4>
+                <div class="top__films-link">
+                    <div class="block__arrow">
+                        <svg class="top__arrow-right--symbol">
+                            <use xlink:href="#arrow-right"></use>
+                        </svg>
+                    </div>
+                    More information
+                </div>
+            </article>
+        </a>
+    
+        <a href="#" class="top__films-item">
+            <img src="assets/images/topFilms/post-23-copyright-485x665.jpg" alt="" class="top__films-img">
+            <article class="top__films-info">
+                <h3 class="top__films-title">PIRATES BAY</h3>
+                <h4 class="top__films-genre">Приключение</h4>
+                <div class="top__films-link">
+                    <div class="block__arrow">
+                        <svg class="top__arrow-right--symbol">
+                            <use xlink:href="#arrow-right"></use>
+                        </svg>
+                    </div>
+                    More information
+                </div>
+            </article>
+        </a>
+    </section>
+    
+    
+    <section class="new__movies">
+        <div class="new__movies-inner">
+            <div class="new__movies-header">
+                <h2 class="new__movies-title">DISCOVER NEW MOVIES</h2>
+                <p class="new__movies-subtitle">Время найти новинки для твоего кинотеатра</p>
+            </div>
+            <div class="new__movies-body">
+                <div class="new__movies-filter">
+                    <a href="#" class="movies__filter-item">Recent</a>
+                    <a href="#" class="movies__filter-item">Most popular</a>
+                    <a href="#" class="movies__filter-item">Best</a>
+                    <a href="#" class="movies__filter-item">Coming soon</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+</div>
+
+<script>
+    const mainPage = document.querySelector('#page');
+    const menu = document.querySelector(".burger");
+    const closeBtn = document.querySelector(".close__block");
+    const links = document.querySelector("#links");
+    const allLinks = document.querySelectorAll(".nav__link-item");
+    const openMenu = () => {
+        if (links.className.includes("open")) {
+            links.classList.remove('open');
+            allLinks.forEach((item) => {
+                item.classList.remove("fade");
+            });
+            mainPage.classList.remove("overflow-hidden");
+        } else {
+            links.classList.add('open');
+            allLinks.forEach((item) => {
+                item.classList.add("fade");
+            });
+            mainPage.classList.add("overflow-hidden");
+        }
+    };
+
+    const closeMenu = () => {
+        if (links.className.includes("open")) {
+            links.classList.remove('open');
+            allLinks.forEach((item) => {
+                item.classList.remove("fade");
+            });
+            mainPage.classList.remove("overflow-hidden");
+        }
+    };
+
+    menu.addEventListener("click", openMenu);
+    closeBtn.addEventListener("click", closeMenu);
+    allLinks.forEach((item) => {
+        item.addEventListener("click", closeMenu);
+    });
+</script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
