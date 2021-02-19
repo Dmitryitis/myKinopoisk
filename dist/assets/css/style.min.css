@@ -1819,3 +1819,16 @@ html, body {
   height: 16px;
   width: 16px;
   background: url("/assets/images/allFilms/active.svg"); }
+
+.btn__filter {
+  margin-top: 30px;
+  padding: 8px 30px;
+  background: #1a1d24;
+  border-radius: 24px;
+  color: white;
+  font-size: 18px;
+  outline: 0;
+  border: 0;
+  cursor: pointer; }
+  .btn__filter:focus {
+    outline: 0; }
