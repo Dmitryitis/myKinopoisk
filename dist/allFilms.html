@@ -622,6 +622,8 @@
                    this.classList.add('active__filter-field');
                    allFilterField.item(0).childNodes[0].textContent = e.target.textContent.trim();
                    allFilterField.item(0).childNodes[1].value = e.target.textContent.trim();
+                   allFilterField.item(0).nextElementSibling.classList.remove('active__filter-item');
+                   allFilterField.item(0).classList.remove('act-filter');
                }
            })
         });
@@ -638,6 +640,8 @@
                     this.classList.add('active__filter-field');
                     allFilterField.item(1).childNodes[0].textContent = e.target.textContent.trim();
                     allFilterField.item(1).childNodes[1].value = e.target.textContent.trim();
+                    allFilterField.item(1).nextElementSibling.classList.remove('active__filter-item');
+                    allFilterField.item(1).classList.remove('act-filter');
                 }
             })
         });
@@ -654,6 +658,8 @@
                     this.classList.add('active__filter-field');
                     allFilterField.item(2).childNodes[0].textContent = e.target.textContent.trim();
                     allFilterField.item(2).childNodes[1].value = e.target.textContent.trim();
+                    allFilterField.item(2).nextElementSibling.classList.remove('active__filter-item');
+                    allFilterField.item(2).classList.remove('act-filter');
                 }
             })
         });
