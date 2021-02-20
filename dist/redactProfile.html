@@ -285,23 +285,35 @@
     
     <section class="profile">
         <div class="profile__inner">
-            <div class="profile__body">
-                <div class="profile__body-inner">
-                    <div class="profile__photo">
-                        <img src="assets/images/profile/user-no-big.gif" alt="" class="profile__img">
-                    </div>
-                    <ul class="profile__info">
-                        <li class="profile__info-item profile__name"><span>ФИО:</span>
-                            <span>Иван Иванович</span></li>
-                        <li class="profile__info-item profile__date"><span>Регистрация:</span>
-                            <span>21 февраля 2021</span></li>
-                        <li class="profile__info-item profile__country"><span>Страна:</span>
-                            <span>Russian</span>
-                        </li>
-                    </ul>
+            <form class="profile__body" method="post" enctype="multipart/form-data">
+                <div class="profile__photo">
+                    <img src="assets/images/profile/user-no-big.gif" alt="" class="profile__img">
+                    <input type="file" placeholder="Выбрать фото" class="redact__photo">
                 </div>
-                <a href="#" class="btn__change-data">Изменить данные</a>
-            </div>
+                <ul class="profile__info profile__info-group--change">
+                    <li class="profile__info-group">
+                        <label class="profile__info-label">
+                            Имя:
+                            <input type="text" name="name" class="profile__info-field">
+                        </label>
+                    </li>
+    
+                    <li class="profile__info-group">
+                        <label class="profile__info-label">
+                            Фамилия:
+                            <input type="text" name="surname" class="profile__info-field">
+                        </label>
+                    </li>
+    
+                    <li class="profile__info-group">
+                        <label class="profile__info-label">
+                            Email:
+                            <input type="text" name="email" class="profile__info-field">
+                        </label>
+                    </li>
+                </ul>
+                <button type="button" class="btn__change-data">Изменить данные</button>
+            </form>
         </div>
     </section>
 
